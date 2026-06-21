@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+*.pem
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# build output
+lib/
+
+# claude
+.claude/*.local.*
+CLAUDE.local.md

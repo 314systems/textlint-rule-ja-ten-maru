@@ -1,0 +1,59 @@
+{
+	"name": "textlint-rule-ja-ten-maru",
+	"version": "0.1.0",
+	"description": "日本語の読点および句点を統一するための textlint ルール",
+	"keywords": [
+		"textlintrule"
+	],
+	"homepage": "https://github.com/314systems/textlint-rule-ja-ten-maru",
+	"bugs": {
+		"url": "https://github.com/314systems/textlint-rule-ja-ten-maru/issues"
+	},
+	"license": "MIT",
+	"author": "int314 (https://int314.com)",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/314systems/textlint-rule-ja-ten-maru.git"
+	},
+	"files": [
+		"lib/",
+		"src/",
+		"!src/**/*.test.ts"
+	],
+	"type": "module",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"publishConfig": {
+		"provenance": true
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"fmt": "oxfmt",
+		"fmt:check": "oxfmt --check",
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
+		"test": "vitest",
+		"prepack": "pnpm build",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@textlint/types": "15.7.1",
+		"@types/node": "24.13.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.0.7",
+		"oxfmt": "0.55.0",
+		"oxlint": "1.70.0",
+		"oxlint-tsgolint": "0.23.0",
+		"textlint-tester": "15.7.1",
+		"typescript": "7.0.1-rc",
+		"vitest": "4.1.9"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,mjs,cjs}": "oxlint --no-error-on-unmatched-pattern",
+		"*": "oxfmt --no-error-on-unmatched-pattern"
+	},
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26"
+}
