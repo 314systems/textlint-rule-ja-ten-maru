@@ -3,6 +3,7 @@ name: Release
 on:
   release:
     types: [published]
+  workflow_dispatch: # manual trigger for re-publishing / recovery
 
 permissions:
   contents: read
@@ -26,4 +27,6 @@ jobs:
       - run: pnpm test
       - run: pnpm build
 
-      - run: pnpm publish
+      # --no-git-checks: release/dispatch runs on a detached tag, not a branch.
+      # --provenance: attach provenance attestation (CI/OIDC only).
+      - run: pnpm publish --no-git-checks --provenance
