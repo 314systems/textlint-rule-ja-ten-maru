@@ -38,7 +38,7 @@
 	},
 	"devDependencies": {
 		"@textlint/types": "15.7.1",
-		"@types/node": "24.13.2",
+		"@types/node": "26.0.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^17.0.7",
 		"oxfmt": "0.55.0",
