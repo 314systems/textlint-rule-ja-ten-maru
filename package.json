@@ -38,15 +38,15 @@
 	},
 	"devDependencies": {
 		"@textlint/types": "15.7.1",
-		"@types/node": "24.13.2",
-		"husky": "^9.1.7",
-		"lint-staged": "^17.0.7",
-		"oxfmt": "0.55.0",
-		"oxlint": "1.70.0",
-		"oxlint-tsgolint": "0.23.0",
+		"@types/node": "24.13.3",
+		"husky": "9.1.7",
+		"lint-staged": "17.0.8",
+		"oxfmt": "0.59.0",
+		"oxlint": "1.74.0",
+		"oxlint-tsgolint": "0.25.0",
 		"textlint-tester": "15.7.1",
-		"typescript": "7.0.1-rc",
-		"vitest": "4.1.9"
+		"typescript": "7.0.2",
+		"vitest": "4.1.10"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,mjs,cjs}": "oxlint --no-error-on-unmatched-pattern",
@@ -55,5 +55,5 @@
 	"engines": {
 		"node": ">=22.13.0"
 	},
-	"packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26"
+	"packageManager": "pnpm@11.14.0+sha512.66c1ac4c7d4762d6d7dde44c7f3e5a73591ed0a0806e751d4ed32d4f004f25b2285a906b1fd8a9e3e621df3b4e2858bf88e50e0cf626bedbe977fe434a5caf85"
 }
