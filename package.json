@@ -41,7 +41,7 @@
 		"@types/node": "24.13.3",
 		"husky": "9.1.7",
 		"lint-staged": "17.1.0",
-		"oxfmt": "0.59.0",
+		"oxfmt": "0.60.0",
 		"oxlint": "1.74.0",
 		"oxlint-tsgolint": "0.25.0",
 		"textlint-tester": "15.7.1",
