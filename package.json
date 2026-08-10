@@ -44,7 +44,7 @@
 		"oxfmt": "0.60.0",
 		"oxlint": "1.74.0",
 		"oxlint-tsgolint": "7.0.2001",
-		"textlint-tester": "15.7.1",
+		"textlint-tester": "15.8.0",
 		"typescript": "7.0.2",
 		"vitest": "4.1.10"
 	},
