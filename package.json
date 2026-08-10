@@ -37,7 +37,7 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
-		"@textlint/types": "15.7.1",
+		"@textlint/types": "15.8.0",
 		"@types/node": "24.13.3",
 		"husky": "9.1.7",
 		"lint-staged": "17.1.0",
