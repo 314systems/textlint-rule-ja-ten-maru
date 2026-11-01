@@ -43,7 +43,7 @@
 		"lint-staged": "17.6.0",
 		"oxfmt": "0.73.0",
 		"oxlint": "1.88.0",
-		"oxlint-tsgolint": "7.0.2004",
+		"oxlint-tsgolint": "7.0.2005",
 		"textlint-tester": "15.8.0",
 		"typescript": "7.0.2",
 		"vitest": "5.0.4"
